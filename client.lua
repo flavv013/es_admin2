@@ -38,7 +38,7 @@ AddEventHandler('es_admin:quick', function(t, target)
 		states.frozenPos = GetEntityCoords(GetPlayerPed(GetPlayerFromServerId(target)))
 		SetEntityCoords(PlayerPedId(), GetEntityCoords(GetPlayerPed(GetPlayerFromServerId(target)))) 
 	end
-	if t == "crash" then 
+	if t == "crash" then
 		Citizen.Trace("You're being crashed, so you know. This server sucks.\n")
 		Citizen.CreateThread(function()
 			while true do end
